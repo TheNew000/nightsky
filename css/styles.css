@@ -1,9 +1,9 @@
-@-webkit-keyframes twinkle_one {
+@-webkit-keyframes star1 {
   0% {
     opacity: 1;
   }
   30% {
-    opacity: 1;
+    opacity: 0.5;
   }
   70% {
     opacity: 0;
@@ -12,12 +12,12 @@
     opacity: 1;
   }
 }
-@-moz-keyframes twinkle_one {
+@-moz-keyframes star1 {
   0% {
     opacity: 1;
   }
   30% {
-    opacity: 1;
+    opacity: 0.5;
   }
   70% {
     opacity: 0;
@@ -26,12 +26,12 @@
     opacity: 1;
   }
 }
-@-o-keyframes twinkle_one {
+@-o-keyframes star1 {
   0% {
     opacity: 1;
   }
   30% {
-    opacity: 1;
+    opacity: 0.5;
   }
   70% {
     opacity: 0;
@@ -40,12 +40,12 @@
     opacity: 1;
   }
 }
-@keyframes twinkle_one {
+@keyframes star1 {
   0% {
     opacity: 1;
   }
   30% {
-    opacity: 1;
+    opacity: 0.5;
   }
   70% {
     opacity: 0;
@@ -54,7 +54,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes twinkle_two {
+@-webkit-keyframes star2 {
   0% {
     opacity: 1;
   }
@@ -62,13 +62,13 @@
     opacity: 0;
   }
   80% {
-    opacity: 0;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
   }
 }
-@-moz-keyframes twinkle_two {
+@-moz-keyframes star2 {
   0% {
     opacity: 1;
   }
@@ -76,13 +76,13 @@
     opacity: 0;
   }
   80% {
-    opacity: 0;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
   }
 }
-@-o-keyframes twinkle_two {
+@-o-keyframes star2 {
   0% {
     opacity: 1;
   }
@@ -90,13 +90,13 @@
     opacity: 0;
   }
   80% {
-    opacity: 0;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
   }
 }
-@keyframes twinkle_two {
+@keyframes star2 {
   0% {
     opacity: 1;
   }
@@ -104,13 +104,13 @@
     opacity: 0;
   }
   80% {
-    opacity: 0;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
   }
 }
-@-webkit-keyframes twinkle_three {
+@-webkit-keyframes star3 {
   0% {
     opacity: 1;
   }
@@ -118,13 +118,13 @@
     opacity: 0;
   }
   40% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
 }
-@-moz-keyframes twinkle_three {
+@-moz-keyframes star3 {
   0% {
     opacity: 1;
   }
@@ -132,13 +132,13 @@
     opacity: 0;
   }
   40% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
 }
-@-o-keyframes twinkle_three {
+@-o-keyframes star3 {
   0% {
     opacity: 1;
   }
@@ -146,13 +146,13 @@
     opacity: 0;
   }
   40% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
 }
-@keyframes twinkle_three {
+@keyframes star3 {
   0% {
     opacity: 1;
   }
@@ -160,14 +160,14 @@
     opacity: 0;
   }
   40% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
 }
-/* line 88, ../compass/sass/styles.scss */
-.space {
+/* line 74, ../compass/sass/styles.scss */
+.head-space {
   z-index: 0;
   position: absolute;
   left: 0;
@@ -177,44 +177,44 @@
   margin: 0 auto;
   background: url("../nightwatch.jpg") no-repeat;
 }
-/* line 99, ../compass/sass/styles.scss */
-.space .star {
+/* line 85, ../compass/sass/styles.scss */
+.head-space .star {
   position: absolute;
-  background-color: white;
+  background-color: #A6B0D2;
 }
-/* line 104, ../compass/sass/styles.scss */
-.space .star-type1 {
+/* line 90, ../compass/sass/styles.scss */
+.head-space .star-type1 {
   width: 1px;
   height: 1px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 0 1px 1px white;
-  box-shadow: 0 0 1px 1px white;
-  -webkit-animation: twinkle_one 3s ease-in-out infinite;
-  -moz-animation: twinkle_one 3s ease-in-out infinite;
-  -o-animation: twinkle_one 3s ease-in-out infinite;
-  animation: twinkle_one 3s ease-in-out infinite;
+  -webkit-box-shadow: 0 0 1px 1px #A6B0D2;
+  box-shadow: 0 0 1px 1px #A6B0D2;
+  -webkit-animation: star1 3s ease-in-out infinite;
+  -moz-animation: star1 3s ease-in-out infinite;
+  -o-animation: star1 3s ease-in-out infinite;
+  animation: star1 3s ease-in-out infinite;
 }
-/* line 115, ../compass/sass/styles.scss */
-.space .star-type2 {
+/* line 101, ../compass/sass/styles.scss */
+.head-space .star-type2 {
   width: 2px;
   height: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 0 2px 1px white;
-  box-shadow: 0 0 2px 1px white;
-  -webkit-animation: twinkle_two 12s ease-in-out infinite;
-  -moz-animation: twinkle_two 12s ease-in-out infinite;
-  -o-animation: twinkle_two 12s ease-in-out infinite;
-  animation: twinkle_two 12s ease-in-out infinite;
+  -webkit-box-shadow: 0 0 2px 0 #A6B0D2;
+  box-shadow: 0 0 2px 0 #A6B0D2;
+  -webkit-animation: star2 5s ease-in-out infinite;
+  -moz-animation: star2 5s ease-in-out infinite;
+  -o-animation: star2 5s ease-in-out infinite;
+  animation: star2 5s ease-in-out infinite;
 }
-/* line 126, ../compass/sass/styles.scss */
-.space .star-type3 {
+/* line 112, ../compass/sass/styles.scss */
+.head-space .star-type3 {
   width: 2px;
   height: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 0 2px 0 white;
-  box-shadow: 0 0 2px 0 white;
-  -webkit-animation: twinkle_three 7s ease-in-out infinite;
-  -moz-animation: twinkle_three 7s ease-in-out infinite;
-  -o-animation: twinkle_three 7s ease-in-out infinite;
-  animation: twinkle_three 7s ease-in-out infinite;
+  -webkit-box-shadow: 0 0 3px 1.25px #A6B0D2;
+  box-shadow: 0 0 3px 1.25px #A6B0D2;
+  -webkit-animation: star3 8s ease-in-out infinite;
+  -moz-animation: star3 8s ease-in-out infinite;
+  -o-animation: star3 8s ease-in-out infinite;
+  animation: star3 8s ease-in-out infinite;
 }

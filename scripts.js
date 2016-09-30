@@ -1,32 +1,20 @@
-// Random Stars
-
 $(document).ready(function(){
-
-    var generateStars = function(){
-        
-        var $galaxy = $(".space");
-        var iterator = 0;
-        
-        while (iterator <= 100){
-            var xposition = Math.random();
-            var yposition = Math.random();
-            var star_type = Math.floor((Math.random() * 3) + 1);
-            var position = {
-                "x" : $galaxy.width() * xposition,
-                "y" : $galaxy.height() * yposition,
-            };
-            
-            $('<div class="star star-type' + star_type + '"></div>').appendTo($galaxy).css({
-                "top" : position.y,
-                "left" : position.x
-            });
-            
-            iterator++;
-        }
-        
+    // Twinkling Star Generator:
+    var populateSky = function(space){  
+        var $space = $(space);
+        var counter = 0;
+        // This generates 150 stars varying from the three different types of stars 
+        while (counter < 150){
+            var star = Math.floor((Math.random() * 3) + 1);
+            var xPos = ($space.width()/2.5) * Math.random();
+            var yPos = $space.height() * Math.random();
+            $('<div class="star star-type' + star + '"></div>').appendTo($space).css({
+                "top" : yPos,
+                "left" : xPos
+            });            
+            counter++;
+        }        
     };
-
-    generateStars();
-
+    populateSky(".head-space");  
 });
 
